@@ -1,0 +1,63 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: lightblue;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+h1{
+    color: rgb(36, 87, 138);
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(36, 87, 138);
+    margin: 5px 0;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+button:hover{
+    background-color: rgb(104, 153, 201)
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.postItem{
+    background-color: #aacdd8;
+    border: 1px solid rgba(60, 15, 221, 0.079);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.editForm{
+    display: none;
+    margin-top: 30px;
+
+}
