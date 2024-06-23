@@ -1,0 +1,23 @@
+version: "3.3"
+
+
+services:
+  dbpostgresredsocial:
+    image: postgres:16 # imagen actualizada, la 16
+    environment: 
+      - POSTGRES_DB=dbadmin
+      - POSTGRES_USER=adminredsocial 
+      - POSTGRES_PASSWORD=YWRtaW5pc3RyYXRvcgo=
+
+    ports: # puerto de escucha, importante verificar si no esta en uso
+      - 5432:5432
+    volumes: # volumen donde hara la persistencia de datos.
+      - ./data:/var/lib/postgresql/data
+
+  pgadminredsocial:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=YWRtaW5pc3RyYXRvcgo=
+    ports:
+      - 5050:80 # importante verificar tambien si esta en uso, o usar el 8080 >= 64535
